@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evelyne & Vous — Vitalité, équilibre et accompagnement bien-être à Saint-Clément-en-Corrèze, à distance et à l'international</title>
+<meta name="description" content="Accompagnement personnalisé à Saint-Clément-en-Corrèze, en Corrèze, à distance et à l'international : vitalité, équilibre, prévention santé et écoute. Premier échange offert.">
+<link rel="canonical" href="https://evelyneconseil.github.io/bienvenue/">
+<meta property="og:title" content="Evelyne & Vous — Vitalité, équilibre et accompagnement bien-être à Saint-Clément-en-Corrèze, à distance et à l'international">
+<meta property="og:description" content="Accompagnement personnalisé : vitalité, équilibre, prévention santé et écoute — à Saint-Clément-en-Corrèze, en Corrèze, à distance et à l'international. Premier échange offert.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Evelyne & Vous",
+  "founder": { "@type": "Person", "name": "Evelyne Vigeon" },
+  "description": "Accompagnement personnalisé en vitalité, équilibre, prévention santé et bien-être pour particuliers, sportifs, seniors, soignants et jeunes parents.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Saint-Clément-en-Corrèze", "addressRegion": "Corrèze", "addressCountry": "FR" },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Corrèze" },
+    { "@type": "Place", "name": "International (à distance)" }
+  ],
+  "telephone": "+33610452536",
+  "email": "evelynevigeon@gmail.com",
+  "url": "https://evelyneconseil.github.io/bienvenue/",
+  "sameAs": [
+    "https://www.facebook.com/evelyne.vigeon",
+    "https://www.youtube.com/channel/UChFzKYpIDAbHsjAisFaKzwA/featured"
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vitalité et équilibre" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Prévention et mieux-être" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Écoute et accompagnement personnalisé" } }
+  ]
+}
+</script>
+<!-- À COMPLÉTER : vérifier/actualiser le domaine, l'email et les liens sociaux ci-dessus (voir message d'accompagnement) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --azur:#2F86A6;--azur-clair:#82BED1;--azur-bg:rgba(47,134,166,.08);
+  --orange:#E2792C;--orange-doux:#c96521;--beige:#FBF6EC;
+  --jaune:#EFB93A;--encre:#33372F;--encre-doux:#6B6F65;--blanc:#FFFEFB;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Jost',system-ui,sans-serif;font-weight:300;background:var(--beige);color:var(--encre);line-height:1.7}
+.top-bar{position:fixed;top:10px;right:10px;z-index:100;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;background:rgba(255,254,251,.92);padding:6px 8px;border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.08);max-width:200px}
+.lang-btn,.read-btn{background:none;border:1px solid rgba(47,134,166,.3);color:var(--encre-doux);font-size:.72rem;padding:4px 9px;border-radius:14px;cursor:pointer;transition:all .2s;white-space:nowrap;font-family:inherit}
+.lang-btn.active{background:var(--azur);color:var(--blanc);border-color:var(--azur)}
+.lang-btn:hover,.read-btn:hover{border-color:var(--azur)}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 24px 20px;text-align:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;background:radial-gradient(circle at 15% 15%,rgba(226,121,44,.14),transparent 55%),radial-gradient(circle at 85% 20%,rgba(239,185,58,.16),transparent 55%),radial-gradient(circle at 50% 90%,rgba(47,134,166,.14),transparent 55%)}
+.hero>*{position:relative;z-index:2}
+.section{max-width:640px;margin:0 auto;padding:36px 24px;opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.section.visible{opacity:1;transform:none}
+.divider{width:44px;height:1px;background:var(--jaune);margin:20px auto}
+h1{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:clamp(2.2rem,7vw,3rem);line-height:1.15;letter-spacing:-.01em;margin-bottom:20px;color:var(--encre)}
+h2{font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:clamp(1.4rem,4.5vw,1.9rem);line-height:1.3;margin-bottom:16px;color:var(--encre)}
+.sub{color:var(--encre-doux);font-size:1.15rem;font-weight:400;margin-bottom:14px;max-width:52ch}
+.sub-strong{color:var(--encre);font-size:1.2rem;font-weight:500;margin-bottom:16px;max-width:56ch}
+.baseline{font-family:'Playfair Display',serif;font-style:italic;color:var(--azur);font-size:1.15rem;margin:2px auto 18px;max-width:40ch}
+.signature{font-family:'Playfair Display',serif;font-style:italic;color:var(--orange);font-size:1.2rem;margin-top:16px}
+.portrait-fallback{width:120px;height:120px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--orange),var(--jaune),var(--azur));color:var(--blanc);font-family:'Playfair Display',serif;font-size:2.2rem;margin-bottom:24px;box-shadow:0 6px 24px rgba(51,55,47,.15)}
+.filter-box{background:var(--blanc);border-radius:6px;padding:28px 24px;margin:28px 0;border:1px solid rgba(47,134,166,.15);text-align:left}
+.options{display:flex;flex-direction:column;gap:10px;margin:20px 0 28px}
+.opt{display:flex;align-items:center;gap:14px;background:var(--blanc);border:1.5px solid rgba(47,134,166,.2);border-radius:6px;padding:16px 20px;cursor:pointer;transition:all .25s ease;font-size:1rem}
+.opt:hover{border-color:var(--azur);background:var(--azur-bg);transform:translateX(4px)}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.mark{flex:0 0 20px;height:20px;border:1.5px solid var(--azur-clair);border-radius:50%;position:relative;transition:.2s}
+.opt[data-multi] .mark{border-radius:4px}
+.opt.on{border-color:var(--azur);background:var(--azur-bg)}
+.opt.on .mark{border-color:var(--azur);background:var(--azur)}
+.opt.on .mark::after{content:'';position:absolute;inset:0;margin:auto;width:6px;height:6px;background:var(--blanc);border-radius:50%}
+.opt[data-multi].on .mark::after{width:9px;height:5px;border:1.5px solid var(--blanc);border-top:0;border-right:0;background:none;border-radius:0;transform:rotate(-45deg) translate(1px,-2px)}
+.opt-text{flex:1}
+.field{margin-bottom:18px}
+.lbl{display:block;font-size:.9rem;margin-bottom:7px;color:var(--encre-doux)}
+input[type=text],input[type=email]{width:100%;font-family:inherit;font-size:1rem;font-weight:300;padding:14px 16px;background:var(--blanc);color:var(--encre);border:1.5px solid rgba(47,134,166,.2);border-radius:6px;transition:border-color .2s}
+input:focus{outline:none;border-color:var(--azur);box-shadow:0 0 0 3px rgba(47,134,166,.12)}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:.88rem;color:var(--encre-doux);margin:22px 0}
+.consent input{margin-top:4px;accent-color:var(--azur);width:17px;height:17px;flex:0 0 auto}
+button{font-family:inherit;font-size:.95rem;cursor:pointer;border:none}
+.btn-primary{background:var(--orange);color:var(--blanc);padding:16px 36px;border-radius:6px;letter-spacing:.03em;transition:background .2s,transform .12s;font-size:1rem}
+.btn-primary:hover{background:var(--orange-doux)}
+.btn-primary:active{transform:scale(.98)}
+.btn-primary:disabled{background:var(--azur-clair);cursor:not-allowed}
+.btn-scroll{background:none;border:none;color:var(--orange);font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;cursor:pointer;margin-top:16px;transition:color .2s}
+.btn-scroll:hover{color:var(--orange-doux)}
+.btn-scroll::after{content:' \2193';font-style:normal}
+.card-link{display:block;background:var(--blanc);border-left:3px solid var(--azur);padding:18px 20px;margin-bottom:12px;text-decoration:none;color:var(--encre);border-radius:0 6px 6px 0;transition:transform .15s,border-color .2s,box-shadow .2s}
+.card-link:hover{transform:translateX(4px);border-color:var(--orange);box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.card-link strong{display:block;font-weight:500;margin-bottom:3px}
+.card-link span{font-size:.87rem;color:var(--encre-doux)}
+.card-link .cta{display:block;color:var(--orange);font-size:.85rem;margin-top:6px;font-weight:500}
+.card-note{font-family:'Playfair Display',serif;font-style:italic;color:var(--encre-doux);font-size:.85rem;margin:-6px 0 16px 20px}
+.socials{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+.social{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:var(--blanc);border:1px solid rgba(47,134,166,.15);border-radius:6px;text-decoration:none;color:var(--encre);font-size:.9rem;transition:all .2s}
+.social:hover{background:var(--azur-bg);border-color:var(--azur)}
+.coordonnees{background:var(--blanc);border-radius:6px;padding:24px;margin:24px 0;border:1px solid rgba(47,134,166,.15)}
+.coordonnees p{margin-bottom:6px;font-size:.95rem}
+footer{text-align:center;padding:32px 24px;font-size:.82rem;color:var(--encre-doux);border-top:1px solid rgba(47,134,166,.1);max-width:640px;margin:0 auto}
+.err{color:var(--orange);font-size:.88rem;margin-top:12px;min-height:1.2em}
+.spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:-2px;margin-right:8px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hidden{display:none !important}
+.section-title{font-family:'Playfair Display',serif;font-weight:500;font-size:1rem;color:var(--encre-doux);margin-bottom:16px}
+@media(max-width:480px){.hero{padding:32px 20px 24px}.section{padding:28px 20px}.filter-box{padding:20px 18px}.top-bar{max-width:160px}}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <button class="lang-btn active" id="btnFR" onclick="setLanguage('fr')">FR</button>
+  <button class="lang-btn" id="btnEN" onclick="setLanguage('en')">EN</button>
+  <button class="lang-btn" id="btnES" onclick="setLanguage('es')">ES</button>
+  <button class="read-btn" id="btnRead" onclick="toggleReadAloud()">🔊</button>
+</div>
+
+<main id="contenuPrincipal">
+
+<section class="hero">
+  <div class="hero-bg"></div>
+
+  <!-- Pas de photo portrait ni de vidéo de fond fournies : remplacez ce cercle par <img class="portrait" src="photo-evelyne.jpg"> et une vidéo fond-video.mp4 dès que vous les aurez -->
+  <div class="portrait-fallback">EV</div>
+
+  <h1><span data-i18n="hero_title">Bienvenue dans l'univers</span><br><img src="logo-evelyne-vous.png" alt="Evelyne & Vous" style="max-width:280px;width:80%;height:auto;margin-top:8px"></h1>
+
+  <p class="baseline" data-i18n="mission">Cultiver sa vitalité, son équilibre et son abondance.</p>
+
+  <p class="sub-strong" style="text-align:center;margin:0 auto 20px" data-i18n="hero_lead">Une baisse d'énergie, une envie de changement, une question sur votre équilibre ?<br><strong>Parlons-en simplement.</strong></p>
+
+  <p class="sub" style="text-align:center;margin:0 auto 16px" data-i18n="hero_p1">J'écoute ce qui vous amène, je cherche à comprendre votre situation et, lorsque je pense pouvoir vous être utile, je vous propose des pistes concrètes.</p>
+  <p class="sub-strong" style="text-align:center;margin:0 auto 24px" data-i18n="hero_choose">Vous choisissez la suite.</p>
+
+  <div style="text-align:left;max-width:520px;margin:24px auto 16px">
+    <p class="section-title" style="text-align:center;font-size:1.1rem;margin-bottom:20px" data-i18n="apporter_title">Ce que je peux vous apporter</p>
+    <div style="margin-bottom:18px">
+      <p style="font-weight:500;color:var(--encre);margin-bottom:4px" data-i18n="bienetre_title">Vitalité &amp; équilibre</p>
+      <p style="font-size:.92rem;color:var(--encre-doux)" data-i18n="bienetre_desc">Faire le point sur votre énergie, votre sommeil et votre équilibre au quotidien, et découvrir des solutions concrètes pour aller de mieux en mieux, jour après jour.</p>
+    </div>
+    <div style="margin-bottom:18px">
+      <p style="font-weight:500;color:var(--encre);margin-bottom:4px" data-i18n="evolution_title">Prévention &amp; mieux-être</p>
+      <p style="font-size:.92rem;color:var(--encre-doux)" data-i18n="evolution_desc">Mesurer plutôt que supposer : mieux comprendre votre équilibre et les habitudes qui font vraiment la différence pour votre santé, à votre rythme.</p>
+    </div>
+    <div style="margin-bottom:18px">
+      <p style="font-weight:500;color:var(--encre);margin-bottom:4px" data-i18n="numerique_title">Écoute &amp; accompagnement</p>
+      <p style="font-size:.92rem;color:var(--encre-doux)" data-i18n="numerique_desc">Un accompagnement chaleureux et à votre rythme, pour prendre soin de vous, avancer sereinement et retrouver ce qui compte vraiment.</p>
+    </div>
+    <p style="font-size:.9rem;color:var(--azur);margin-top:14px;font-weight:500" data-i18n="audience">Pour les sportifs, les femmes de 40 à 60 ans, les seniors, les soignants et les jeunes parents — en Corrèze, à distance et à l'international.</p>
+  </div>
+
+  <p class="signature">Evelyne</p>
+  <p style="font-size:.85rem;color:var(--azur);letter-spacing:.05em;margin-top:8px" data-i18n="motto">Écouter · Comprendre · Accompagner · Avancer</p>
+  <button class="btn-scroll" style="margin-top:16px" data-i18n="connaissance_title" onclick="document.getElementById('q1').scrollIntoView({behavior:'smooth'})">Faisons connaissance</button>
+</section>
+
+<div class="section" id="q1">
+  <h2 data-i18n="connaissance_title">Faisons connaissance</h2>
+  <p class="sub-strong" data-i18n="connaissance_lead">Quelques questions pour comprendre ce qui vous amène et vous orienter vers les ressources qui pourraient vous être utiles.</p>
+  <p class="sub" data-i18n="connaissance_note">Il n'y a pas de bonne ou de mauvaise réponse. Répondez simplement selon votre situation aujourd'hui.</p>
+
+  <h2 style="margin-top:28px" data-i18n="q1_title">Comment avez-vous découvert Evelyne &amp; Vous ?</h2>
+  <div class="options" data-name="source">
+    <label class="opt"><input type="radio" name="source" value="Échange direct"><span class="mark"></span><span class="opt-text" data-i18n="q1opt1">Nous avons déjà échangé</span></label>
+    <label class="opt"><input type="radio" name="source" value="Recommandation"><span class="mark"></span><span class="opt-text" data-i18n="q1opt2">Une personne m'a parlé d'Evelyne &amp; Vous</span></label>
+    <label class="opt"><input type="radio" name="source" value="Carte de visite"><span class="mark"></span><span class="opt-text" data-i18n="q1opt3">J'ai reçu une carte de visite</span></label>
+    <label class="opt"><input type="radio" name="source" value="Réseaux sociaux"><span class="mark"></span><span class="opt-text" data-i18n="q1opt4">J'ai découvert Evelyne &amp; Vous sur les réseaux sociaux</span></label>
+    <label class="opt"><input type="radio" name="source" value="Internet"><span class="mark"></span><span class="opt-text" data-i18n="q1opt5">J'ai découvert Evelyne &amp; Vous sur Internet</span></label>
+    <label class="opt"><input type="radio" name="source" value="Autre" id="q1AutreRadio"><span class="mark"></span><span class="opt-text" data-i18n="q1opt6">Autre</span></label>
+  </div>
+
+  <div class="field hidden" id="champQ1Autre">
+    <label class="lbl" for="q1AutrePrecision" data-i18n="q1_autre_label">Précisez, si vous le souhaitez</label>
+    <input type="text" id="q1AutrePrecision">
+  </div>
+
+  <div class="field hidden" id="champReco">
+    <label class="lbl" for="recommandeur" data-i18n="reco_label">Si quelqu'un vous a parlé d'Evelyne &amp; Vous, qui puis-je remercier ?</label>
+    <input type="text" id="recommandeur" data-i18n-ph="reco_placeholder" placeholder="Prénom ou nom — facultatif">
+  </div>
+
+  <button class="btn-primary" style="margin-top:8px" data-i18n="btn_continuer" onclick="revealQ2()">Continuer</button>
+</div>
+
+<div class="divider hidden" id="div2"></div>
+
+<div class="section hidden" id="q2">
+  <h2 data-i18n="q2_title">Qu'est-ce qui vous amène aujourd'hui ?</h2>
+  <p class="sub" data-i18n="q2_sub">Vous pouvez choisir plusieurs réponses.</p>
+  <div class="options" data-name="interets" data-multi>
+    <label class="opt" data-multi><input type="checkbox" name="interets" value="Bien-être"><span class="mark"></span><span class="opt-text" data-i18n="q2opt1">Votre bien-être et votre vitalité</span></label>
+    <label class="opt" data-multi><input type="checkbox" name="interets" value="Équilibre santé"><span class="mark"></span><span class="opt-text" data-i18n="q2opt2">Votre équilibre et votre santé au quotidien</span></label>
+    <label class="opt" data-multi><input type="checkbox" name="interets" value="Revenus complémentaires"><span class="mark"></span><span class="opt-text" data-i18n="q2opt3">J'aimerais explorer une possibilité de revenus complémentaires</span></label>
+    <label class="opt" data-multi><input type="checkbox" name="interets" value="Énergie"><span class="mark"></span><span class="opt-text" data-i18n="q2opt4">Retrouver de l'énergie au quotidien</span></label>
+    <label class="opt" data-multi><input type="checkbox" name="interets" value="Explore"><span class="mark"></span><span class="opt-text" data-i18n="q2opt5">Vous ne savez pas encore, vous explorez</span></label>
+    <label class="opt" data-multi><input type="checkbox" name="interets" value="Autre" id="q2AutreCheckbox"><span class="mark"></span><span class="opt-text" data-i18n="q2opt6">Autre</span></label>
+  </div>
+
+  <div class="field hidden" id="champQ2Autre">
+    <label class="lbl" for="q2AutrePrecision" data-i18n="q2_autre_label">En quelques mots, qu'aimeriez-vous améliorer, faire évoluer ou résoudre ?</label>
+    <input type="text" id="q2AutrePrecision">
+  </div>
+
+  <button class="btn-primary" style="margin-top:8px" data-i18n="btn_continuer" onclick="revealRdv()">Continuer</button>
+</div>
+
+<div class="divider hidden" id="divRdv"></div>
+
+<div class="section hidden" id="rdv">
+  <h2 data-i18n="rdv_title">Souhaitez-vous être tenu(e) informé(e) de mes prochains rendez-vous ?</h2>
+  <p class="sub" data-i18n="rdv_sub">Vous pouvez cocher une option, les deux, ou aucune.</p>
+
+  <div class="options" data-name="rdv_choix" data-multi>
+    <label class="opt" data-multi><input type="checkbox" name="rdv_choix" value="Conférence en ligne" id="rdvConfCheckbox"><span class="mark"></span><span class="opt-text" data-i18n="rdv_conf_label">Être informé(e) d'une prochaine conférence en ligne, en groupe</span></label>
+    <label class="opt" data-multi><input type="checkbox" name="rdv_choix" value="Événement local" id="rdvEventCheckbox"><span class="mark"></span><span class="opt-text" data-i18n="rdv_event_label">Être informé(e) d'un événement près de chez moi</span></label>
+  </div>
+
+  <div class="field hidden" id="champConfSujet">
+    <p class="lbl" data-i18n="rdv_conf_sujet_label">Cela concerne plutôt :</p>
+    <div class="options" data-name="conf_sujet">
+      <label class="opt"><input type="radio" name="conf_sujet" value="Bien-être"><span class="mark"></span><span class="opt-text" data-i18n="rdv_conf_sujet_opt1">Le bien-être et l'équilibre</span></label>
+      <label class="opt"><input type="radio" name="conf_sujet" value="Activité"><span class="mark"></span><span class="opt-text" data-i18n="rdv_conf_sujet_opt2">Le projet d'activité</span></label>
+      <label class="opt"><input type="radio" name="conf_sujet" value="Les deux"><span class="mark"></span><span class="opt-text" data-i18n="rdv_conf_sujet_opt3">Les deux</span></label>
+    </div>
+  </div>
+
+  <div class="field hidden" id="champEventVille">
+    <label class="lbl" for="eventVille" data-i18n="rdv_event_ville_label">Votre ville ou votre secteur</label>
+    <input type="text" id="eventVille" data-i18n-ph="rdv_event_ville_placeholder" placeholder="Pour vous prévenir quand un événement aura lieu près de chez vous">
+  </div>
+
+  <button class="btn-primary" style="margin-top:8px" data-i18n="btn_continuer" onclick="revealFin()">Continuer</button>
+</div>
+
+<div class="divider hidden" id="div3"></div>
+
+<div class="section hidden" id="fin">
+  <h2 data-i18n="fin_title">Pour pouvoir reprendre notre échange</h2>
+  <p class="sub" data-i18n="fin_p1">Si nous avons déjà échangé, vos coordonnées me permettent de savoir que vous avez poursuivi votre démarche et de reprendre notre conversation là où nous l'avons laissée.</p>
+  <p class="sub" style="margin-bottom:24px" data-i18n="fin_p2">Si nous ne nous connaissons pas encore, elles me permettront simplement de vous répondre si vous souhaitez échanger avec moi.</p>
+
+  <p class="lbl" data-i18n="canal_question">Comment préférez-vous qu'on échange ?</p>
+  <div class="options" data-name="canal">
+    <label class="opt"><input type="radio" name="canal" value="Visioconférence"><span class="mark"></span><span class="opt-text" data-i18n="canalopt1">Une visioconférence</span></label>
+    <label class="opt"><input type="radio" name="canal" value="Appel"><span class="mark"></span><span class="opt-text" data-i18n="canalopt2">Un appel téléphonique</span></label>
+    <label class="opt"><input type="radio" name="canal" value="Messages"><span class="mark"></span><span class="opt-text" data-i18n="canalopt3">Par message (WhatsApp, SMS)</span></label>
+    <label class="opt"><input type="radio" name="canal" value="Email"><span class="mark"></span><span class="opt-text" data-i18n="canalopt4">Par email</span></label>
+    <label class="opt"><input type="radio" name="canal" value="Pas de préférence"><span class="mark"></span><span class="opt-text" data-i18n="canalopt5">Pas de préférence particulière</span></label>
+  </div>
+
+  <div class="field" style="margin-top:8px"><label class="lbl" for="prenom"><span data-i18n="lbl_prenom">Prénom</span> <span style="opacity:.7" data-i18n="tag_obligatoire">(obligatoire)</span></label><input type="text" id="prenom" autocomplete="given-name"></div>
+  <div class="field"><label class="lbl" for="email"><span data-i18n="lbl_email">Adresse e-mail</span> <span style="opacity:.7" data-i18n="tag_obligatoire">(obligatoire)</span></label><input type="email" id="email" autocomplete="email"></div>
+  <div class="field"><label class="lbl" for="telephone"><span data-i18n="lbl_telephone">Téléphone</span> <span style="opacity:.7" data-i18n="tag_facultatif_appel">(facultatif, sauf si vous choisissez un appel)</span></label><input type="text" id="telephone" autocomplete="tel"></div>
+
+  <label class="consent"><input type="checkbox" id="rgpd"><span data-i18n="consent_text">J'accepte qu'Evelyne conserve mes coordonnées pour me recontacter. Aucune donnée n'est transmise à un tiers.</span></label>
+  <button class="btn-primary" id="submitBtn" data-i18n="btn_continuer" onclick="submitForm()">Continuer</button>
+  <p class="err" id="err"></p>
+</div>
+
+<div class="section hidden" id="merci">
+  <h1 id="merciTitre" style="text-align:center">Merci.</h1>
+  <div class="divider"></div>
+
+  <h2 data-i18n="explore_title">À vous d'explorer</h2>
+  <p class="sub-strong" data-i18n="explore_p1">Vous connaissez mieux que personne ce qui compte pour vous aujourd'hui.</p>
+  <p class="sub" data-i18n="explore_p2">Je vous laisse maintenant découvrir librement les ressources qui vous intéressent.</p>
+  <p class="sub" data-i18n="explore_p3">Vous n'avez pas besoin de tout consulter. <strong>Commencez simplement par ce qui vous parle.</strong></p>
+
+  <div style="margin-top:24px">
+    <!-- À COMPLÉTER : ces 4 pages (bilan / essentiel / evolution / projet) n'existent pas encore — à créer, ou dites-moi et je les rédige -->
+    <a class="card-link" href="https://evelyneconseil.github.io/bienvenue/bilan" target="_blank" rel="noopener"><strong data-i18n="lien_bilan_title">Faire mon bilan vitalité &amp; équilibre</strong><span data-i18n="lien_bilan_desc">Faites le point sur votre énergie actuelle, vos habitudes et ce que vous aimeriez éventuellement améliorer.</span><span class="cta" data-i18n="lien_bilan_cta">→ Faire mon bilan</span></a>
+    <a class="card-link" href="https://evelyneconseil.github.io/bienvenue/essentiel" target="_blank" rel="noopener"><strong data-i18n="lien_essentiel_title">Comprendre l'essentiel</strong><span data-i18n="lien_essentiel_desc">Découvrez une approche de prévention qui permet de mieux comprendre votre équilibre et l'intérêt de mesurer au lieu de supposer.</span><span class="cta" data-i18n="lien_essentiel_cta">→ Découvrir l'essentiel</span></a>
+    <a class="card-link" href="https://evelyneconseil.github.io/bienvenue/evolution" target="_blank" rel="noopener"><strong data-i18n="lien_evolution_title">Faire le point sur mon évolution</strong><span data-i18n="lien_evolution_desc">Prenez un temps pour réfléchir à votre situation, à ce qui vous convient encore… et à ce que vous aimeriez peut-être voir évoluer.</span><span class="cta" data-i18n="lien_evolution_cta">→ Faire le point</span></a>
+    <a class="card-link" href="https://evelyneconseil.github.io/bienvenue/projet" target="_blank" rel="noopener"><strong data-i18n="lien_projet_title">Découvrir un projet d'activité</strong><span data-i18n="lien_projet_desc">Explorez, en toute discrétion, une possibilité d'activité et de diversification de revenus, simplement pour comprendre son fonctionnement.</span><span class="cta" data-i18n="lien_projet_cta">→ Découvrir le projet</span></a>
+    <p class="card-note" data-i18n="projet_note">Vous ne risquez rien à regarder — essayez, c'est l'adopté !</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <h2 data-i18n="question_apres_title">Une question après votre visite ?</h2>
+  <p class="sub" data-i18n="question_apres_p1">Vous avez consulté une ressource et quelque chose vous interpelle, vous intéresse ou vous donne envie d'en savoir plus ?</p>
+  <p class="sub-strong" data-i18n="revenez">Revenez vers moi.</p>
+  <p class="sub" data-i18n="question_apres_p2">Nous reprendrons simplement la conversation à partir de vos questions et de ce que vous aurez envie d'explorer.</p>
+  <p class="sub-strong" style="margin-bottom:24px" data-i18n="premier_echange">Notre premier échange est offert, libre et sans engagement.</p>
+
+  <a class="card-link" href="https://wa.me/33610452536" target="_blank" rel="noopener" style="border-color:var(--orange)">
+    <strong data-i18n="reserver_title">Réserver un échange avec Evelyne</strong>
+    <span data-i18n="reserver_desc">Écrivez-moi sur WhatsApp pour convenir ensemble d'un moment</span>
+  </a>
+
+  <div class="coordonnees" style="margin-top:32px">
+    <p style="font-weight:500;font-size:1.05rem;margin-bottom:12px">Evelyne &amp; Vous</p>
+    <p data-i18n="loc_text">Saint-Clément-en-Corrèze, Corrèze, France</p>
+    <p><strong>+33 6 10 45 25 36</strong></p>
+    <!-- À COMPLÉTER : adresse email -->
+    <p><strong>evelynevigeon@gmail.com</strong></p>
+  </div>
+
+  <p style="font-size:.85rem;color:var(--encre-doux);margin:20px 0 12px;" data-i18n="retrouvez_label">Retrouvez-moi :</p>
+  <div class="socials">
+    <a class="social" href="https://www.facebook.com/evelyne.vigeon" target="_blank" rel="noopener">Facebook</a>
+    <a class="social" href="https://www.youtube.com/channel/UChFzKYpIDAbHsjAisFaKzwA/featured" target="_blank" rel="noopener">YouTube</a>
+  </div>
+
+  <p style="font-size:.85rem;color:var(--encre-doux);margin:20px 0 12px;" data-i18n="echanger_label">Échanger directement avec moi :</p>
+  <div class="socials">
+    <a class="social" href="https://wa.me/33610452536" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="social" href="https://t.me/evelynevigeon" target="_blank" rel="noopener">Telegram</a>
+  </div>
+
+  <p class="signature" style="margin-top:28px">Evelyne</p>
+  <p style="font-size:.85rem;color:var(--azur);letter-spacing:.05em;margin-top:8px" data-i18n="motto">Écouter · Comprendre · Accompagner · Avancer</p>
+</div>
+
+<footer>
+  <button id="btnShare" onclick="shareSite()" style="display:flex;align-items:center;justify-content:center;width:36px;height:36px;margin:0 auto 20px;border-radius:50%;background:var(--azur-bg);border:1px solid rgba(47,134,166,.25);color:var(--encre-doux);cursor:pointer;transition:all .2s" onmouseover="this.style.borderColor='var(--azur)'" onmouseout="this.style.borderColor='rgba(47,134,166,.25)'">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+  </button>
+  <p style="font-weight:500;margin-bottom:8px">Evelyne &amp; Vous</p>
+  <p data-i18n="footer_p1">Accompagnement personnalisé — Vitalité, équilibre et prévention — Saint-Clément-en-Corrèze · Corrèze · À distance et à l'international.</p>
+  <p style="margin-top:12px" data-i18n="footer_disclaimer">Les informations proposées dans le domaine du bien-être et de la prévention ont une vocation informative. Elles ne constituent ni un diagnostic ni un traitement et ne remplacent pas l'avis d'un professionnel de santé.</p>
+
+  <details style="margin-top:24px;text-align:left;max-width:520px;margin-left:auto;margin-right:auto">
+    <summary style="cursor:pointer;color:var(--azur);font-size:.85rem;text-align:center" data-i18n="mentions_summary">Mentions légales &amp; confidentialité</summary>
+    <div style="margin-top:16px;font-size:.8rem;line-height:1.6;color:var(--encre-doux)">
+      <p style="font-weight:500;color:var(--encre);margin-bottom:6px" data-i18n="mentions_editeur_title">Éditeur du site</p>
+      <!-- À COMPLÉTER : SIRET / statut juridique exact -->
+      <p data-i18n="mentions_editeur_text">Evelyne Vigeon — Entreprise individuelle<br>
+      SIRET : à compléter<br>
+      Saint-Clément-en-Corrèze, Corrèze, France<br>
+      evelynevigeon@gmail.com · +33 6 10 45 25 36</p>
+
+      <p style="font-weight:500;color:var(--encre);margin:14px 0 6px" data-i18n="mentions_hebergement_title">Hébergement</p>
+      <p data-i18n="mentions_hebergement_text">Ce site est hébergé par GitHub, Inc. (GitHub Pages), 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.<br>
+      Domaine à déposer auprès du registraire de votre choix.</p>
+
+      <p style="font-weight:500;color:var(--encre);margin:14px 0 6px" data-i18n="mentions_rgpd_title">Protection des données personnelles</p>
+      <p data-i18n="mentions_rgpd_text">Les informations recueillies dans ce formulaire (prénom, email, téléphone) sont collectées par Evelyne Vigeon, responsable du traitement, dans le seul but de vous recontacter suite à votre demande.<br><br>
+      Ces données ne sont ni vendues, ni cédées, ni transmises à un tiers.<br><br>
+      Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour l'exercer, écrivez à evelynevigeon@gmail.com.</p>
+    </div>
+  </details>
+</footer>
+
+</main>
+
+<script>
+const CONFIG = {
+  ENDPOINT : "https://script.google.com/macros/s/AKfycbzoz_wmVTQQafeoIQ9csK3XnS45oomG1IjmYw2yhJ4gwOQp6GPzY2R4pLev2EB6EyHI/exec"
+};
+
+var currentLang = 'fr';
+
+var TRANSLATIONS = {
+  fr: {
+    title: "Evelyne & Vous — Vitalité, équilibre et accompagnement bien-être à Saint-Clément-en-Corrèze, à distance et à l'international",
+    hero_title: "Bienvenue dans l'univers",
+    mission: "Cultiver sa vitalité, son équilibre et son abondance.",
+    hero_lead: "Une baisse d'énergie, une envie de changement, une question sur votre équilibre ?<br><strong>Parlons-en simplement.</strong>",
+    hero_p1: "J'écoute ce qui vous amène, je cherche à comprendre votre situation et, lorsque je pense pouvoir vous être utile, je vous propose des pistes concrètes.",
+    hero_choose: "Vous choisissez la suite.",
+    apporter_title: "Ce que je peux vous apporter",
+    bienetre_title: "Vitalité &amp; équilibre",
+    bienetre_desc: "Faire le point sur votre énergie, votre sommeil et votre équilibre au quotidien, et découvrir des solutions concrètes pour aller de mieux en mieux, jour après jour.",
+    evolution_title: "Prévention &amp; mieux-être",
+    evolution_desc: "Mesurer plutôt que supposer : mieux comprendre votre équilibre et les habitudes qui font vraiment la différence pour votre santé, à votre rythme.",
+    numerique_title: "Écoute &amp; accompagnement",
+    numerique_desc: "Un accompagnement chaleureux et à votre rythme, pour prendre soin de vous, avancer sereinement et retrouver ce qui compte vraiment.",
+    audience: "Pour les sportifs, les femmes de 40 à 60 ans, les seniors, les soignants et les jeunes parents — en Corrèze, à distance et à l'international.",
+    connaissance_title: "Faisons connaissance",
+    connaissance_lead: "Quelques questions pour comprendre ce qui vous amène et vous orienter vers les ressources qui pourraient vous être utiles.",
+    connaissance_note: "Il n'y a pas de bonne ou de mauvaise réponse. Répondez simplement selon votre situation aujourd'hui.",
+    q1_title: "Comment avez-vous découvert Evelyne &amp; Vous ?",
+    q1opt1: "Nous avons déjà échangé",
+    q1opt2: "Une personne m'a parlé d'Evelyne &amp; Vous",
+    q1opt3: "J'ai reçu une carte de visite",
+    q1opt4: "J'ai découvert Evelyne &amp; Vous sur les réseaux sociaux",
+    q1opt5: "J'ai découvert Evelyne &amp; Vous sur Internet",
+    q1opt6: "Autre",
+    q1_autre_label: "Précisez, si vous le souhaitez",
+    reco_label: "Si quelqu'un vous a parlé d'Evelyne &amp; Vous, qui puis-je remercier ?",
+    reco_placeholder: "Prénom ou nom — facultatif",
+    btn_continuer: "Continuer",
+    q2_title: "Qu'est-ce qui vous amène aujourd'hui ?",
+    q2_sub: "Vous pouvez choisir plusieurs réponses.",
+    q2opt1: "Votre bien-être et votre vitalité",
+    q2opt2: "Votre équilibre et votre santé au quotidien",
+    q2opt3: "J'aimerais explorer une possibilité de revenus complémentaires",
+    q2opt4: "Retrouver de l'énergie au quotidien",
+    q2opt5: "Vous ne savez pas encore, vous explorez",
+    q2opt6: "Autre",
+    q2_autre_label: "En quelques mots, qu'aimeriez-vous améliorer, faire évoluer ou résoudre ?",
+    rdv_title: "Souhaitez-vous être tenu(e) informé(e) de mes prochains rendez-vous ?",
+    rdv_sub: "Vous pouvez cocher une option, les deux, ou aucune.",
+    rdv_conf_label: "Être informé(e) d'une prochaine conférence en ligne, en groupe",
+    rdv_conf_sujet_label: "Cela concerne plutôt :",
+    rdv_conf_sujet_opt1: "Le bien-être et l'équilibre",
+    rdv_conf_sujet_opt2: "Le projet d'activité",
+    rdv_conf_sujet_opt3: "Les deux",
+    rdv_event_label: "Être informé(e) d'un événement près de chez moi",
+    rdv_event_ville_label: "Votre ville ou votre secteur",
+    rdv_event_ville_placeholder: "Pour vous prévenir quand un événement aura lieu près de chez vous",
+    fin_title: "Pour pouvoir reprendre notre échange",
+    fin_p1: "Si nous avons déjà échangé, vos coordonnées me permettent de savoir que vous avez poursuivi votre démarche et de reprendre notre conversation là où nous l'avons laissée.",
+    fin_p2: "Si nous ne nous connaissons pas encore, elles me permettront simplement de vous répondre si vous souhaitez échanger avec moi.",
+    canal_question: "Comment préférez-vous qu'on échange ?",
+    canalopt1: "Une visioconférence",
+    canalopt2: "Un appel téléphonique",
+    canalopt3: "Par message (WhatsApp, SMS)",
+    canalopt4: "Par email",
+    canalopt5: "Pas de préférence particulière",
+    lbl_prenom: "Prénom",
+    lbl_email: "Adresse e-mail",
+    lbl_telephone: "Téléphone",
+    tag_obligatoire: "(obligatoire)",
+    tag_facultatif_appel: "(facultatif, sauf si vous choisissez un appel)",
+    consent_text: "J'accepte qu'Evelyne conserve mes coordonnées pour me recontacter. Aucune donnée n'est transmise à un tiers.",
+    err_prenom: "Il me manque votre prénom.",
+    err_email: "Cette adresse email ne semble pas valide.",
+    err_rgpd: "Cochez la case pour que je puisse vous recontacter.",
+    err_telephone: "Pour un appel téléphonique, laissez-moi votre numéro.",
+    sending_text: "Envoi...",
+    merci_prefix: "Merci",
+    explore_title: "À vous d'explorer",
+    explore_p1: "Vous connaissez mieux que personne ce qui compte pour vous aujourd'hui.",
+    explore_p2: "Je vous laisse maintenant découvrir librement les ressources qui vous intéressent.",
+    explore_p3: "Vous n'avez pas besoin de tout consulter. <strong>Commencez simplement par ce qui vous parle.</strong>",
+    lien_bilan_title: "Faire mon bilan vitalité &amp; équilibre",
+    lien_bilan_desc: "Faites le point sur votre énergie actuelle, vos habitudes et ce que vous aimeriez éventuellement améliorer.",
+    lien_bilan_cta: "→ Faire mon bilan",
+    lien_essentiel_title: "Comprendre l'essentiel",
+    lien_essentiel_desc: "Découvrez une approche de prévention qui permet de mieux comprendre votre équilibre et l'intérêt de mesurer au lieu de supposer.",
+    lien_essentiel_cta: "→ Découvrir l'essentiel",
+    lien_evolution_title: "Faire le point sur mon évolution",
+    lien_evolution_desc: "Prenez un temps pour réfléchir à votre situation, à ce qui vous convient encore… et à ce que vous aimeriez peut-être voir évoluer.",
+    lien_evolution_cta: "→ Faire le point",
+    lien_projet_title: "Découvrir un projet d'activité",
+    lien_projet_desc: "Explorez, en toute discrétion, une possibilité d'activité et de diversification de revenus, simplement pour comprendre son fonctionnement.",
+    lien_projet_cta: "→ Découvrir le projet",
+    projet_note: "Vous ne risquez rien à regarder — essayez, c'est l'adopté !",
+    question_apres_title: "Une question après votre visite ?",
+    question_apres_p1: "Vous avez consulté une ressource et quelque chose vous interpelle, vous intéresse ou vous donne envie d'en savoir plus ?",
+    revenez: "Revenez vers moi.",
+    question_apres_p2: "Nous reprendrons simplement la conversation à partir de vos questions et de ce que vous aurez envie d'explorer.",
+    premier_echange: "Notre premier échange est offert, libre et sans engagement.",
+    reserver_title: "Réserver un échange avec Evelyne",
+    reserver_desc: "Écrivez-moi sur WhatsApp pour convenir ensemble d'un moment",
+    loc_text: "Saint-Clément-en-Corrèze, Corrèze, France",
+    retrouvez_label: "Retrouvez-moi :",
+    echanger_label: "Échanger directement avec moi :",
+    communautes_label: "Mes communautés :",
+    commu_telegram: "Communauté Telegram",
+    commu_whatsapp: "Communauté WhatsApp",
+    motto: "Écouter · Comprendre · Accompagner · Avancer",
+    footer_p1: "Accompagnement personnalisé — Vitalité, équilibre et prévention — Saint-Clément-en-Corrèze · Corrèze · À distance et à l'international.",
+    footer_disclaimer: "Les informations proposées dans le domaine du bien-être et de la prévention ont une vocation informative. Elles ne constituent ni un diagnostic ni un traitement et ne remplacent pas l'avis d'un professionnel de santé.",
+    mentions_summary: "Mentions légales &amp; confidentialité",
+    mentions_editeur_title: "Éditeur du site",
+    mentions_editeur_text: "Evelyne Vigeon — Entreprise individuelle<br>SIRET : 837 891 613 00015<br>Saint-Clément, Corrèze, France<br>evelynevigeon@gmail.com · +33 6 10 45 25 36",
+    mentions_hebergement_title: "Hébergement",
+    mentions_hebergement_text: "Ce site est hébergé par GitHub, Inc. (GitHub Pages), 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.",
+    mentions_rgpd_title: "Protection des données personnelles",
+    mentions_rgpd_text: "Les informations recueillies dans ce formulaire (prénom, email, téléphone) sont collectées par Evelyne Vigeon, responsable du traitement, dans le seul but de vous recontacter suite à votre demande.<br><br>Ces données ne sont ni vendues, ni cédées, ni transmises à un tiers.<br><br>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression de vos données. Pour l'exercer, écrivez à evelynevigeon@gmail.com.",
+    read_label: "Écouter",
+    stop_label: "Arrêter"
+  },
+  en: {
+    title: "Evelyne & Vous — Vitality, balance and well-being support in Saint-Clément-en-Corrèze, remotely and internationally",
+    hero_title: "Welcome to the world of",
+    mission: "Cultivating vitality, balance and abundance.",
+    hero_lead: "A dip in energy, a wish for change, a question about your balance?<br><strong>Let's simply talk about it.</strong>",
+    hero_p1: "I listen to what brings you here, I try to understand your situation, and when I think I can be of help, I suggest concrete paths.",
+    hero_choose: "You choose what comes next.",
+    apporter_title: "What I can offer you",
+    bienetre_title: "Vitality &amp; balance",
+    bienetre_desc: "Take stock of your energy, your sleep and your daily balance, and discover concrete ways to feel better, day after day.",
+    evolution_title: "Prevention &amp; well-being",
+    evolution_desc: "Measure rather than assume: better understand your balance and the habits that really make a difference for your health, at your own pace.",
+    numerique_title: "Listening &amp; support",
+    numerique_desc: "Warm, personalized support at your own pace, to take care of yourself, move forward with peace of mind, and reconnect with what really matters.",
+    audience: "For athletes, women aged 40 to 60, seniors, caregivers and young parents — in Corrèze, remotely and internationally.",
+    connaissance_title: "Let's get acquainted",
+    connaissance_lead: "A few questions to understand what brings you here and guide you toward the resources that might be useful to you.",
+    connaissance_note: "There's no right or wrong answer. Simply answer based on where you stand today.",
+    q1_title: "How did you discover Evelyne &amp; Vous?",
+    q1opt1: "We've already talked",
+    q1opt2: "Someone told me about Evelyne &amp; Vous",
+    q1opt3: "I received a business card",
+    q1opt4: "I discovered Evelyne &amp; Vous on social media",
+    q1opt5: "I discovered Evelyne &amp; Vous online",
+    q1opt6: "Other",
+    q1_autre_label: "Please specify, if you'd like",
+    reco_label: "If someone told you about Evelyne &amp; Vous, who can I thank?",
+    reco_placeholder: "First name or name — optional",
+    btn_continuer: "Continue",
+    q2_title: "What brings you here today?",
+    q2_sub: "You can select several answers.",
+    q2opt1: "Your well-being and vitality",
+    q2opt2: "Your everyday balance and health",
+    q2opt3: "I'd like to explore a possibility of additional income",
+    q2opt4: "Getting more energy in daily life",
+    q2opt5: "You're not sure yet, you're exploring",
+    q2opt6: "Other",
+    q2_autre_label: "In a few words, what would you like to improve, evolve or resolve?",
+    rdv_title: "Would you like to be kept informed of my upcoming events?",
+    rdv_sub: "You can select one option, both, or none.",
+    rdv_conf_label: "Be informed about an upcoming live online group conference",
+    rdv_conf_sujet_label: "This is mainly about:",
+    rdv_conf_sujet_opt1: "Well-being and balance",
+    rdv_conf_sujet_opt2: "The activity project",
+    rdv_conf_sujet_opt3: "Both",
+    rdv_event_label: "Be informed about an event near me",
+    rdv_event_ville_label: "Your city or area",
+    rdv_event_ville_placeholder: "So I can let you know when an event is happening near you",
+    fin_title: "So we can pick our conversation back up",
+    fin_p1: "If we've already talked, your details let me know you've followed up, so we can pick our conversation back up where we left it.",
+    fin_p2: "If we don't know each other yet, they'll simply let me answer you if you'd like to talk with me.",
+    canal_question: "How would you prefer we get in touch?",
+    canalopt1: "A video call",
+    canalopt2: "A phone call",
+    canalopt3: "By message (WhatsApp, SMS)",
+    canalopt4: "By email",
+    canalopt5: "No particular preference",
+    lbl_prenom: "First name",
+    lbl_email: "Email address",
+    lbl_telephone: "Phone number",
+    tag_obligatoire: "(required)",
+    tag_facultatif_appel: "(optional, unless you choose a phone call)",
+    consent_text: "I agree that Evelyne may keep my details to contact me back. No data is shared with any third party.",
+    err_prenom: "I still need your first name.",
+    err_email: "This email address doesn't look valid.",
+    err_rgpd: "Please check the box so I can contact you back.",
+    err_telephone: "For a phone call, please leave me your number.",
+    sending_text: "Sending...",
+    merci_prefix: "Thank you",
+    explore_title: "Now it's up to you to explore",
+    explore_p1: "You know better than anyone what matters to you today.",
+    explore_p2: "I'll now let you freely discover the resources that interest you.",
+    explore_p3: "You don't need to look at everything. <strong>Just start with whatever speaks to you.</strong>",
+    lien_bilan_title: "Take my vitality &amp; balance assessment",
+    lien_bilan_desc: "Take stock of your current energy, your habits, and what you might like to improve.",
+    lien_bilan_cta: "→ Take my assessment",
+    lien_essentiel_title: "Understand the essentials",
+    lien_essentiel_desc: "Discover a prevention approach that helps you better understand your balance, and the value of measuring rather than assuming.",
+    lien_essentiel_cta: "→ Discover the essentials",
+    lien_evolution_title: "Take stock of my evolution",
+    lien_evolution_desc: "Take some time to reflect on your situation, on what still suits you… and on what you might want to see evolve.",
+    lien_evolution_cta: "→ Take stock",
+    lien_projet_title: "Discover a possible activity",
+    lien_projet_desc: "Discreetly explore a possible activity and a way to diversify your income, simply to understand how it works.",
+    lien_projet_cta: "→ Discover the project",
+    projet_note: "There's no risk in just having a look — try it, you'll be hooked!",
+    question_apres_title: "A question after your visit?",
+    question_apres_p1: "Did something in a resource catch your attention, interest you, or make you want to know more?",
+    revenez: "Come back to me.",
+    question_apres_p2: "We'll simply pick the conversation back up from your questions and whatever you'd like to explore.",
+    premier_echange: "Our first conversation is offered, free of charge and without obligation.",
+    reserver_title: "Book a conversation with Evelyne",
+    reserver_desc: "Message me on WhatsApp and we'll find a time together",
+    loc_text: "Saint-Clément-en-Corrèze, Corrèze, France",
+    retrouvez_label: "Find me on:",
+    echanger_label: "Get in touch with me directly:",
+    communautes_label: "My communities:",
+    commu_telegram: "Telegram community",
+    commu_whatsapp: "WhatsApp community",
+    motto: "Listen · Understand · Support · Move forward",
+    footer_p1: "Personalized support — Vitality, balance and prevention — Saint-Clément-en-Corrèze · Corrèze · Remotely and internationally.",
+    footer_disclaimer: "The information provided in the area of well-being and prevention is for informational purposes only. It does not constitute a diagnosis or treatment and does not replace the advice of a healthcare professional.",
+    mentions_summary: "Legal notice &amp; privacy",
+    mentions_editeur_title: "Website publisher",
+    mentions_editeur_text: "Evelyne Vigeon — Sole proprietorship<br>SIRET: 837 891 613 00015<br>Saint-Clément, Corrèze, France<br>evelynevigeon@gmail.com · +33 6 10 45 25 36",
+    mentions_hebergement_title: "Hosting",
+    mentions_hebergement_text: "This site is hosted by GitHub, Inc. (GitHub Pages), 88 Colin P Kelly Jr St, San Francisco, CA 94107, United States.",
+    mentions_rgpd_title: "Personal data protection",
+    mentions_rgpd_text: "The information collected in this form (first name, email, phone) is collected by Evelyne Vigeon, data controller, for the sole purpose of contacting you back following your request.<br><br>This data is neither sold, shared, nor transferred to any third party.<br><br>In accordance with the General Data Protection Regulation (GDPR), you have the right to access, rectify and delete your data. To exercise this right, write to evelynevigeon@gmail.com.",
+    read_label: "Listen",
+    stop_label: "Stop"
+  },
+  es: {
+    title: "Evelyne & Vous — Vitalidad, equilibrio y acompañamiento de bienestar en Saint-Clément-en-Corrèze, a distancia e internacionalmente",
+    hero_title: "Bienvenido/a al universo de",
+    mission: "Cultivar su vitalidad, su equilibrio y su abundancia.",
+    hero_lead: "¿Una bajada de energía, un deseo de cambio, una pregunta sobre su equilibrio?<br><strong>Hablemos de ello, simplemente.</strong>",
+    hero_p1: "Escucho lo que le trae aquí, trato de comprender su situación y, cuando creo que puedo serle útil, le propongo pistas concretas.",
+    hero_choose: "Usted elige lo que viene después.",
+    apporter_title: "Lo que puedo aportarle",
+    bienetre_title: "Vitalidad y equilibrio",
+    bienetre_desc: "Hacer balance de su energía, su sueño y su equilibrio diario, y descubrir soluciones concretas para sentirse cada día mejor.",
+    evolution_title: "Prevención y bienestar",
+    evolution_desc: "Medir en lugar de suponer: comprender mejor su equilibrio y los hábitos que realmente marcan la diferencia para su salud, a su propio ritmo.",
+    numerique_title: "Escucha y acompañamiento",
+    numerique_desc: "Un acompañamiento cálido y a su propio ritmo, para cuidarse, avanzar con serenidad y reencontrar lo que de verdad importa.",
+    audience: "Para deportistas, mujeres de 40 a 60 años, personas mayores, cuidadores y padres jóvenes — en Corrèze, a distancia e internacionalmente.",
+    connaissance_title: "Conozcámonos",
+    connaissance_lead: "Algunas preguntas para comprender qué le trae aquí y orientarle hacia los recursos que podrían serle útiles.",
+    connaissance_note: "No hay respuesta correcta ni incorrecta. Responda simplemente según su situación actual.",
+    q1_title: "¿Cómo descubrió Evelyne &amp; Vous?",
+    q1opt1: "Ya hemos hablado",
+    q1opt2: "Alguien me habló de Evelyne &amp; Vous",
+    q1opt3: "Recibí una tarjeta de visita",
+    q1opt4: "Descubrí Evelyne &amp; Vous en las redes sociales",
+    q1opt5: "Descubrí Evelyne &amp; Vous en Internet",
+    q1opt6: "Otro",
+    q1_autre_label: "Precise, si lo desea",
+    reco_label: "Si alguien le habló de Evelyne &amp; Vous, ¿a quién puedo agradecer?",
+    reco_placeholder: "Nombre o apellido — opcional",
+    btn_continuer: "Continuar",
+    q2_title: "¿Qué le trae hoy aquí?",
+    q2_sub: "Puede elegir varias respuestas.",
+    q2opt1: "Su bienestar y su vitalidad",
+    q2opt2: "Su equilibrio y su salud diaria",
+    q2opt3: "Me gustaría explorar una posibilidad de ingresos complementarios",
+    q2opt4: "Recuperar energía en el día a día",
+    q2opt5: "Aún no lo sabe, está explorando",
+    q2opt6: "Otro",
+    q2_autre_label: "En pocas palabras, ¿qué le gustaría mejorar, hacer evolucionar o resolver?",
+    rdv_title: "¿Le gustaría estar informado/a de mis próximas citas?",
+    rdv_sub: "Puede marcar una opción, las dos, o ninguna.",
+    rdv_conf_label: "Ser informado/a de una próxima conferencia en línea, en grupo",
+    rdv_conf_sujet_label: "Esto trata sobre todo de:",
+    rdv_conf_sujet_opt1: "El bienestar y el equilibrio",
+    rdv_conf_sujet_opt2: "El proyecto de actividad",
+    rdv_conf_sujet_opt3: "Ambos",
+    rdv_event_label: "Ser informado/a de un evento cerca de donde vivo",
+    rdv_event_ville_label: "Su ciudad o zona",
+    rdv_event_ville_placeholder: "Para avisarle cuando haya un evento cerca de usted",
+    fin_title: "Para poder retomar nuestra conversación",
+    fin_p1: "Si ya hemos hablado, sus datos me permiten saber que ha continuado su proceso y retomar nuestra conversación donde la dejamos.",
+    fin_p2: "Si aún no nos conocemos, simplemente me permitirán responderle si desea hablar conmigo.",
+    canal_question: "¿Cómo prefiere que nos pongamos en contacto?",
+    canalopt1: "Una videollamada",
+    canalopt2: "Una llamada telefónica",
+    canalopt3: "Por mensaje (WhatsApp, SMS)",
+    canalopt4: "Por correo electrónico",
+    canalopt5: "Sin preferencia particular",
+    lbl_prenom: "Nombre",
+    lbl_email: "Correo electrónico",
+    lbl_telephone: "Teléfono",
+    tag_obligatoire: "(obligatorio)",
+    tag_facultatif_appel: "(opcional, salvo que elija una llamada)",
+    consent_text: "Acepto que Evelyne conserve mis datos para volver a contactarme. Ningún dato se transmite a terceros.",
+    err_prenom: "Me falta su nombre.",
+    err_email: "Esta dirección de correo no parece válida.",
+    err_rgpd: "Marque la casilla para que pueda volver a contactarle.",
+    err_telephone: "Para una llamada telefónica, déjeme su número.",
+    sending_text: "Enviando...",
+    merci_prefix: "Gracias",
+    explore_title: "A usted le toca explorar",
+    explore_p1: "Usted conoce mejor que nadie lo que le importa hoy.",
+    explore_p2: "Ahora le dejo descubrir libremente los recursos que le interesen.",
+    explore_p3: "No necesita consultarlo todo. <strong>Empiece simplemente por lo que le hable a usted.</strong>",
+    lien_bilan_title: "Hacer mi balance de vitalidad y equilibrio",
+    lien_bilan_desc: "Haga balance de su energía actual, sus hábitos y lo que quizás le gustaría mejorar.",
+    lien_bilan_cta: "→ Hacer mi balance",
+    lien_essentiel_title: "Comprender lo esencial",
+    lien_essentiel_desc: "Descubra un enfoque de prevención que permite comprender mejor su equilibrio y el interés de medir en lugar de suponer.",
+    lien_essentiel_cta: "→ Descubrir lo esencial",
+    lien_evolution_title: "Hacer balance de mi evolución",
+    lien_evolution_desc: "Tómese un tiempo para reflexionar sobre su situación, sobre lo que aún le conviene… y sobre lo que quizás le gustaría ver evolucionar.",
+    lien_evolution_cta: "→ Hacer balance",
+    lien_projet_title: "Descubrir un proyecto de actividad",
+    lien_projet_desc: "Explore, con toda discreción, una posible actividad y una forma de diversificar sus ingresos, simplemente para comprender su funcionamiento.",
+    lien_projet_cta: "→ Descubrir el proyecto",
+    projet_note: "No arriesga nada con solo mirar — ¡pruébelo, engancha!",
+    question_apres_title: "¿Alguna pregunta tras su visita?",
+    question_apres_p1: "¿Consultó un recurso y algo le interpeló, le interesó o le dio ganas de saber más?",
+    revenez: "Vuelva a contactarme.",
+    question_apres_p2: "Simplemente retomaremos la conversación a partir de sus preguntas y de lo que le apetezca explorar.",
+    premier_echange: "Nuestra primera conversación es gratuita, libre y sin compromiso.",
+    reserver_title: "Reservar una conversación con Evelyne",
+    reserver_desc: "Escríbame por WhatsApp y buscamos un momento juntos",
+    loc_text: "Saint-Clément-en-Corrèze, Corrèze, Francia",
+    retrouvez_label: "Encuéntreme en:",
+    echanger_label: "Hablar directamente conmigo:",
+    communautes_label: "Mis comunidades:",
+    commu_telegram: "Comunidad de Telegram",
+    commu_whatsapp: "Comunidad de WhatsApp",
+    motto: "Escuchar · Comprender · Acompañar · Avanzar",
+    footer_p1: "Acompañamiento personalizado — Vitalidad, equilibrio y prevención — Saint-Clément-en-Corrèze · Corrèze · A distancia e internacionalmente.",
+    footer_disclaimer: "La información ofrecida en el ámbito del bienestar y la prevención es meramente informativa. No constituye un diagnóstico ni un tratamiento y no sustituye el consejo de un profesional de la salud.",
+    mentions_summary: "Aviso legal y privacidad",
+    mentions_editeur_title: "Editor del sitio",
+    mentions_editeur_text: "Evelyne Vigeon — Empresa individual<br>SIRET: 837 891 613 00015<br>Saint-Clément, Corrèze, Francia<br>evelynevigeon@gmail.com · +33 6 10 45 25 36",
+    mentions_hebergement_title: "Alojamiento",
+    mentions_hebergement_text: "Este sitio está alojado por GitHub, Inc. (GitHub Pages), 88 Colin P Kelly Jr St, San Francisco, CA 94107, Estados Unidos.",
+    mentions_rgpd_title: "Protección de datos personales",
+    mentions_rgpd_text: "La información recopilada en este formulario (nombre, correo electrónico, teléfono) es recogida por Evelyne Vigeon, responsable del tratamiento, con el único fin de volver a contactarle tras su solicitud.<br><br>Estos datos no se venden, ni se ceden, ni se transmiten a terceros.<br><br>De conformidad con el Reglamento General de Protección de Datos (RGPD), usted dispone de un derecho de acceso, rectificación y supresión de sus datos. Para ejercerlo, escriba a evelynevigeon@gmail.com.",
+    read_label: "Escuchar",
+    stop_label: "Detener"
+  }
+};
+
+function setLanguage(lang){
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  document.title = TRANSLATIONS[lang].title;
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var key = el.getAttribute('data-i18n');
+    if(TRANSLATIONS[lang][key] !== undefined){ el.innerHTML = TRANSLATIONS[lang][key]; }
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(function(el){
+    var key = el.getAttribute('data-i18n-ph');
+    if(TRANSLATIONS[lang][key] !== undefined){ el.setAttribute('placeholder', TRANSLATIONS[lang][key]); }
+  });
+  document.getElementById('btnFR').classList.toggle('active', lang === 'fr');
+  document.getElementById('btnEN').classList.toggle('active', lang === 'en');
+  document.getElementById('btnES').classList.toggle('active', lang === 'es');
+  if(window.speechSynthesis.speaking){ window.speechSynthesis.cancel(); }
+  updateReadBtn();
+}
+
+var isSpeaking = false;
+function updateReadBtn(){
+  var btn = document.getElementById('btnRead');
+  btn.textContent = isSpeaking ? ('⏹ ' + TRANSLATIONS[currentLang].stop_label) : '🔊';
+}
+function toggleReadAloud(){
+  if(isSpeaking){
+    window.speechSynthesis.cancel();
+    isSpeaking = false;
+    updateReadBtn();
+    return;
+  }
+  var mainText = document.getElementById('contenuPrincipal').innerText;
+  var utter = new SpeechSynthesisUtterance(mainText);
+  utter.lang = currentLang === 'fr' ? 'fr-FR' : (currentLang === 'en' ? 'en-US' : 'es-ES');
+  utter.onend = function(){ isSpeaking = false; updateReadBtn(); };
+  utter.onerror = function(){ isSpeaking = false; updateReadBtn(); };
+  window.speechSynthesis.speak(utter);
+  isSpeaking = true;
+  updateReadBtn();
+}
+
+function shareSite(){
+  var btn = document.getElementById('btnShare');
+  var shareData = {
+    title: document.title,
+    url: window.location.href
+  };
+  if(navigator.share){
+    navigator.share(shareData).catch(function(){});
+  } else if(navigator.clipboard){
+    var originalHTML = btn.innerHTML;
+    navigator.clipboard.writeText(window.location.href).then(function(){
+      btn.innerHTML = '✓';
+      window.setTimeout(function(){ btn.innerHTML = originalHTML; }, 1500);
+    });
+  }
+}
+
+var data = {};
+var observer = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){ if(entry.isIntersecting) entry.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.section').forEach(function(s){ observer.observe(s); });
+
+document.querySelectorAll('.opt input').forEach(function(input){
+  input.addEventListener('change', function(){
+    var opt = input.closest('.opt');
+    var group = input.closest('.options');
+
+    if(input.type === 'radio'){
+      var siblings = group.querySelectorAll('.opt');
+      for(var i=0; i<siblings.length; i++){ siblings[i].classList.remove('on'); }
+      opt.classList.add('on');
+      collect(group);
+
+      var section = opt.closest('.section');
+      if(section && section.id === 'q1'){
+        var reco = document.getElementById('champReco');
+        var autreQ1 = document.getElementById('champQ1Autre');
+        if(input.value === 'Recommandation'){
+          reco.classList.remove('hidden');
+        } else {
+          reco.classList.add('hidden');
+        }
+        if(input.value === 'Autre'){
+          autreQ1.classList.remove('hidden');
+        } else {
+          autreQ1.classList.add('hidden');
+        }
+      }
+    } else {
+      opt.classList.toggle('on', input.checked);
+      collect(group);
+
+      if(input.id === 'q2AutreCheckbox'){
+        var autreQ2 = document.getElementById('champQ2Autre');
+        if(input.checked){ autreQ2.classList.remove('hidden'); }
+        else { autreQ2.classList.add('hidden'); }
+      }
+      if(input.id === 'rdvConfCheckbox'){
+        var confSujet = document.getElementById('champConfSujet');
+        if(input.checked){ confSujet.classList.remove('hidden'); }
+        else { confSujet.classList.add('hidden'); }
+      }
+      if(input.id === 'rdvEventCheckbox'){
+        var eventVille = document.getElementById('champEventVille');
+        if(input.checked){ eventVille.classList.remove('hidden'); }
+        else { eventVille.classList.add('hidden'); }
+      }
+    }
+  });
+});
+
+function collect(group){
+  var name = group.dataset.name;
+  var inputs = group.querySelectorAll('input:checked');
+  var values = [];
+  for(var i=0; i<inputs.length; i++){ values.push(inputs[i].value); }
+  data[name] = values.length > 0 ? values.join(' / ') : "";
+}
+
+function revealQ2(){
+  show('div2');
+  show('q2');
+  window.setTimeout(function(){
+    var el = document.getElementById('q2');
+    if(el) el.scrollIntoView({behavior:'smooth', block:'center'});
+  }, 100);
+}
+
+function revealRdv(){
+  show('divRdv');
+  show('rdv');
+  window.setTimeout(function(){
+    var el = document.getElementById('rdv');
+    if(el) el.scrollIntoView({behavior:'smooth', block:'center'});
+  }, 100);
+}
+
+function revealFin(){
+  show('div3');
+  show('fin');
+  window.setTimeout(function(){
+    var el = document.getElementById('fin');
+    if(el) el.scrollIntoView({behavior:'smooth', block:'center'});
+  }, 100);
+}
+
+function show(id){
+  var el = document.getElementById(id);
+  if(el){
+    el.classList.remove('hidden');
+    el.classList.add('visible');
+    observer.observe(el);
+  }
+}
+
+function submitForm(){
+  var err = document.getElementById('err');
+  var prenom = document.getElementById('prenom').value.trim();
+  var email  = document.getElementById('email').value.trim();
+  var telephone = document.getElementById('telephone').value.trim();
+  var T = TRANSLATIONS[currentLang];
+
+  if(!prenom){ err.textContent = T.err_prenom; return; }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){ err.textContent = T.err_email; return; }
+  if(!document.getElementById('rgpd').checked){ err.textContent = T.err_rgpd; return; }
+
+  var canalInput = document.querySelector('input[name="canal"]:checked');
+  var canalValeur = canalInput ? canalInput.value : "";
+  if(canalValeur === "Appel" && !telephone){
+    err.textContent = T.err_telephone;
+    return;
+  }
+
+  err.textContent = "";
+
+  var btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span>' + T.sending_text;
+
+  document.querySelectorAll('.options').forEach(function(group){ collect(group); });
+
+  var payload = Object.assign({}, data, {
+    prenom: prenom,
+    email: email,
+    telephone: telephone,
+    canal: canalValeur,
+    recommandeur: document.getElementById('recommandeur').value.trim(),
+    q1Autre: document.getElementById('q1AutrePrecision').value.trim(),
+    q2Autre: document.getElementById('q2AutrePrecision').value.trim(),
+    confSujet: document.querySelector('input[name="conf_sujet"]:checked') ? document.querySelector('input[name="conf_sujet"]:checked').value : "",
+    eventVille: document.getElementById('eventVille').value.trim(),
+    consentement: "Oui",
+    langue: currentLang,
+    date: new Date().toISOString()
+  });
+
+  fetch(CONFIG.ENDPOINT, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: {'Content-Type':'text/plain;charset=utf-8'},
+    body: JSON.stringify(payload)
+  }).then(afficherMerci).catch(afficherMerci);
+}
+
+function afficherMerci(){
+  var prenom = document.getElementById('prenom').value.trim();
+  document.getElementById('fin').classList.add('hidden');
+  show('merci');
+  document.getElementById('merciTitre').textContent = TRANSLATIONS[currentLang].merci_prefix + " " + prenom;
+  window.setTimeout(function(){
+    var el = document.getElementById('merci');
+    if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+  }, 100);
+}
+</script>
+</body>
+</html>
